@@ -1,48 +1,33 @@
-
-import React from "react";
 import { useState } from "react";
-export default function App7() {
-  const [user, setUser] = useState({});
-  const [users, setUsers] = useState([]);
-  const handleSubmit = () => {
-    setUsers([...users, user]);
-  };
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import App1 from "./components/App1";
+import App2 from "./components/App2";
+import App3 from "./components/App3";
+import App4 from "./components/App4";
+import App5 from "./components/App5";
+import App6 from "./components/App6";
+import App7 from "./components/App7";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+function App() {
   return (
-    <div>
-      <h1>App7</h1>
-      <h2>useState with Arrays and Objects</h2>
-      <h3>Registration Form</h3>
-      <p>
-        <input
-          type="text"
-          onChange={(e) => setUser({ ...user, name: e.target.value })}
-          placeholder="Enter Name"
-        />
-      </p>
-      <p>
-        <input
-          type="text"
-          onChange={(e) => setUser({ ...user, age: e.target.value })}
-          placeholder="Enter Age"
-        />
-      </p>
-      <p>
-        <input
-          type="text"
-          onChange={(e) => setUser({ ...user, city: e.target.value })}
-          placeholder="Enter City"
-        />
-      </p>
-      <button onClick={handleSubmit}>Submit</button>
-      <hr />
-      <ol>
-        {users &&
-          users.map((value) => (
-            <li key={value.name}>
-              {value.name}-{value.age}-{value.city}
-            </li>
-          ))}
-      </ol>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route index element={<App1 />}></Route>
+        <Route path="/" element={<App1 />}></Route>
+        <Route path="/app2" element={<App2 />}></Route>
+        <Route path="/app3" element={<App3 />}></Route>
+        <Route path="/app4" element={<App4 />}></Route>
+         <Route path="/app5" element={<App5 />}></Route>
+         <Route path="/app6" element={<App6 />}></Route>
+         <Route path="/app7" element={<App7 />}></Route>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
+export default App;
