@@ -1,5 +1,5 @@
 .heading {
-  color: #60b281;
+  color: #f3f4f3;
   font-family: Arial, sans-serif;
 }
 
@@ -9,7 +9,7 @@
   align-items: center;
   border: 2px solid black;
   padding: 45px;
-  background-color: #c1e8c6;
+  background-color: #f9f9f9;
 }
 
 .box {
