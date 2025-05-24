@@ -1,0 +1,19 @@
+.heading {
+  color: #60b281;
+  font-family: Arial, sans-serif;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+  padding: 45px;
+  background-color: #c1e8c6;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 20px;
+  font-weight: bold;
+}
