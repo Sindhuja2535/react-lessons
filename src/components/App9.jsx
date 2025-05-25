@@ -10,7 +10,7 @@ function App9() {
       <h2>Assignment</h2>
       
       <button onClick={() => setCount(count + 1)}>+</button>
-      <p>{count}</p>
+        {count}
       <button onClick={() => setCount(count - 1)}>-</button>
     </div>
   );
