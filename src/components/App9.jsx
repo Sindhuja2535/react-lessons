@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 function App9() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(10); // ✅ Start from 10
 
   return (
     <div>
