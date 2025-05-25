@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const products = [
   { id: 1, name: "Product 1", price: 23 },
   { id: 2, name: "Product 2", price: 45 },
+ 
 ];
 
 export default function App10() {
