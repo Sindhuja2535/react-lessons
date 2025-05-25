@@ -8,10 +8,11 @@ function App9() {
     <div>
       <h1>App9</h1>
       <h2>Assignment</h2>
-      
+      <p>
       <button onClick={() => setCount(count + 1)}>+</button>
         {count}
       <button onClick={() => setCount(count - 1)}>-</button>
+   </p>
     </div>
   );
 }
